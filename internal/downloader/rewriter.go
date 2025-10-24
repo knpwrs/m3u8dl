@@ -102,7 +102,6 @@ func rewriteTagLine(line, sourceURL string, fs *filesystem.FileSystem) (string, 
 		// Replace the URL with relative path
 		before := result[:uriValueStart]
 		after := result[uriValueStart+uriEnd:]
-		result = before + relativePath + after
 
 		// Move past this replacement to find next URI
 		result = before + relativePath + after

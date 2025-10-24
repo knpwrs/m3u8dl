@@ -22,13 +22,10 @@ type ProgressTracker struct {
 	segmentFiles    int
 
 	// Byte counts
-	totalBytes      int64
 	downloadedBytes int64
 
 	// Timing
-	startTime   time.Time
-	lastUpdate  time.Time
-	lastBytes   int64
+	startTime time.Time
 
 	// Display
 	enabled bool
@@ -152,7 +149,7 @@ func (p *ProgressTracker) PrintSummary() {
 }
 
 // PrintVerbose prints a verbose message if verbose mode is enabled.
-func (p *ProgressTracker) PrintVerbose(format string, args ...interface{}) {
+func (p *ProgressTracker) PrintVerbose(format string, args ...any) {
 	if !p.enabled || !p.verbose {
 		return
 	}
