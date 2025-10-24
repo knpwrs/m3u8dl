@@ -1,5 +1,9 @@
 # m3u8dl
 
+[![Test](https://github.com/knpwrs/m3u8dl/actions/workflows/test.yml/badge.svg)](https://github.com/knpwrs/m3u8dl/actions/workflows/test.yml)
+[![Release](https://github.com/knpwrs/m3u8dl/actions/workflows/release.yml/badge.svg)](https://github.com/knpwrs/m3u8dl/actions/workflows/release.yml)
+[![codecov](https://codecov.io/gh/knpwrs/m3u8dl/branch/main/graph/badge.svg)](https://codecov.io/gh/knpwrs/m3u8dl)
+
 A CLI utility that downloads M3U8 playlists and all referenced files recursively.
 
 ## Features
@@ -14,6 +18,22 @@ A CLI utility that downloads M3U8 playlists and all referenced files recursively
 - **Deduplication**: Tracks visited URLs to avoid downloading duplicates
 
 ## Installation
+
+### Homebrew
+
+```bash
+brew install knpwrs/tap/m3u8dl
+```
+
+### Using [`eget`](https://github.com/zyedidia/eget)
+
+```bash
+eget knpwrs/m3u8dl
+```
+
+### Pre-built Binaries
+
+Download the latest release for your platform from the [releases page](https://github.com/knpwrs/m3u8dl/releases).
 
 ### From Source
 
